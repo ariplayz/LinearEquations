@@ -19,14 +19,11 @@ class Program
         Console.WriteLine("Input Operation: ");
         userInput = Console.ReadLine();
         
-        Console.WriteLine(userInput);
-        
         operation = ConvertToNumber(userInput);
         
-        Console.WriteLine(operation);
     }
 
-    static int ConvertToNumber(string input)
+    public static int ConvertToNumber(string input)
     {
         // Filter out any non-digit characters
         string numbersOnly = new string(input.Where(char.IsDigit).ToArray());
