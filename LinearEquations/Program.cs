@@ -50,8 +50,9 @@ class Program
                 catch (Exception)
                 {
                     Console.WriteLine("Invalid input. Please enter valid numbers.");
-                }
+                } 
                 break;
+                
         }
         
     }
