@@ -1,0 +1,7 @@
+﻿services:
+  linearequations:
+    image: linearequations
+    build:
+      context: .
+      dockerfile: LinearEquations/Dockerfile
+

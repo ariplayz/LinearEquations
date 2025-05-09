@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearEquations", "LinearEquations\LinearEquations.csproj", "{3EE3B086-285F-49C5-A255-E4EFF3AB4625}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{13D795E7-A8D7-4BA9-85F1-5F9C4E5CB1AE}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EE3B086-285F-49C5-A255-E4EFF3AB4625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE3B086-285F-49C5-A255-E4EFF3AB4625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE3B086-285F-49C5-A255-E4EFF3AB4625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE3B086-285F-49C5-A255-E4EFF3AB4625}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
