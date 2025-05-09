@@ -1,4 +1,6 @@
-﻿namespace LinearEquations;
+﻿using LinearEquations.Operations;
+
+namespace LinearEquations;
 
 class Program
 {
@@ -20,6 +22,37 @@ class Program
         userInput = Console.ReadLine();
         
         operation = ConvertToNumber(userInput);
+
+        switch (operation)
+        {
+            case 1:
+                try
+                {
+                    Console.WriteLine("Enter x1: ");
+                    double x1 = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Enter y1: ");
+                    double y1 = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Enter x2: ");
+                    double x2 = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine("Enter y2: ");
+                    double y2 = Convert.ToDouble(Console.ReadLine());
+        
+                    var result = operation1.calculate(x1, y1, x2, y2);
+                    Console.WriteLine($"Slope: {result.Slope}");
+                    Console.WriteLine($"Y-Intercept: {result.YIntercept}");
+                    Console.WriteLine($"Slope-Intercept Form: {result.SlopeInterceptForm}");
+                    Console.WriteLine($"Standard Form: {result.StandardForm}");
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.WriteLine($"Error: {ex.Message}");
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Invalid input. Please enter valid numbers.");
+                }
+                break;
+        }
         
     }
 
