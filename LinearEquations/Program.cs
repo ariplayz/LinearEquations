@@ -66,6 +66,15 @@ class Program
                     Console.WriteLine($"Standard Form: {standardform}");
                     
                     break;
+                case 3:
+                    Console.WriteLine("Enter standard form: ");
+                    string standardform2 = Console.ReadLine();
+                    
+                    string slopeintercept2 = operation3.calculate(standardform2);
+                    
+                    Console.WriteLine($"Slope-Intercept Form: {slopeintercept2}");
+
+                    break;
             }
 
             // Wait for 2 seconds
