@@ -59,13 +59,17 @@ class Program
 
     public static int ConvertToNumber(string input)
     {
+        // Check if the input starts with a minus sign
+        bool isNegative = input.TrimStart().StartsWith("-");
+    
         // Filter out any non-digit characters
-        string numbersOnly = new string(input.Where(char.IsDigit).ToArray());
+        string numbersOnly = new string(input.Where(c => char.IsDigit(c)).ToArray());
     
         // Try to parse the filtered string to an integer
         if (int.TryParse(numbersOnly, out int result))
         {
-            return result;
+            // Apply the negative sign if needed
+            return isNegative ? -result : result;
         }
     
         // Return 0 if parsing fails
